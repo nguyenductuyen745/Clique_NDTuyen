@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="../ingredient-general/css/base.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
-    <title>Document</title>
+    <title>Sign in</title>
 </head>
 <body style="background-color: black;">
     <div class="clique">
@@ -25,10 +25,12 @@
             <div class="clique-modal__title">Sign In</div>
             <form action="" method="Post" class="clique-modal__form-login">
                 <div class="form-login-email">
-                    <input type="text" placeholder="Email" class="form-login-email__input">
+                    <input id="email" type="text" placeholder="Email" class="form-login-email__input">
+                    <label for="email" class="form-login-email__label">Email</label>
                 </div>
                 <div class="form-login-password">
-                    <input type="password" placeholder="Password" class="form-login-password__input">
+                    <input id="password" type="password" placeholder="Password" class="form-login-password__input">
+                    <label for="password" class="form-login-password__label" for="">Password</label>
                 </div>
                 <input type="submit" class="form-login-submit btn-hover" value="Login">
             </form>

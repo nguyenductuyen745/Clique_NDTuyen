@@ -41,7 +41,6 @@
 
     .clique::-webkit-scrollbar {
         display: none;
-
     }
 
     .clique::after {

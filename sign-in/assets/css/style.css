@@ -95,7 +95,8 @@
 
 .form-login-email, .form-login-password {
     overflow: hidden;
-    padding: 15px 20px;
+    padding: 20px 20px 10px 20px;
+    position: relative;
     margin-bottom: 1.4rem;
     border-radius: 0.3rem;
     color: var(--black-color);
@@ -106,6 +107,27 @@
 .form-login-email__input, .form-login-password__input {
     height: 3rem;
     width: 30.2rem;
+    outline: none;
+}
+
+.clique-modal__form-login input::placeholder {
+    color: transparent;
+}
+
+.clique-modal__form-login input:focus ~ label, 
+.clique-modal__form-login input:not(:placeholder-shown) ~ label {
+    font-size: 1.2rem;
+    top: 0;
+}
+
+.form-login-email__label, .form-login-password__label {
+    top: 15px;
+    left: 20px;
+    cursor: text;
+    line-height: 3rem;
+    font-size: 1.6rem;
+    position: absolute;
+    transition: all 0.2s linear;
 }
 
 .form-login-submit {
@@ -214,14 +236,6 @@
 
 .social-item--facebook {
     background-color: #264F88;
-}
-
-.tiwitter-login-icon {
-
-}
-
-.facebook-login-icon {
-
 }
 
 .clique-modal__new-register {
