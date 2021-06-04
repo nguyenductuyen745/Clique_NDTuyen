@@ -127,6 +127,7 @@
 }
 
 .home-header__functional > div:hover:not(:last-of-type) {
+    cursor: pointer;
     filter: brightness(1.5);
 }
 
