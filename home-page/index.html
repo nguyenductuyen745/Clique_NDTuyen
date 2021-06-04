@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="../ingredient-general/css/base.css">
+    <link rel="stylesheet" href="./assets/library-grid-system/Grid.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="home">
+        <header class="home-header">
+            <label for="search" class="home-header__search-mobile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 14.59 14.591">
+                    <path id="Path_1" data-name="Path 1" d="M9.744,1.67a5.709,5.709,0,1,0-.781,8.721A1.2,1.2,0,0,0,9.29,11l3.241,3.241a1.206,1.206,0,1,0,1.706-1.706L11,9.289a1.206,1.206,0,0,0-.6-.325A5.715,5.715,0,0,0,9.744,1.67ZM8.721,8.721a4.262,4.262,0,1,1,0-6.027A4.267,4.267,0,0,1,8.721,8.721Z" transform="translate(-0.001 0)" fill="#707070"/>
+                </svg>  
+            </label>
+            <input type="checkbox" id="search">
+            <div class="home-header__search-wrap">
+                <div class="home-header__search">
+                    <div class="header-search-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14.59" height="14.591" viewBox="0 0 14.59 14.591">
+                            <path id="Path_1" data-name="Path 1" d="M9.744,1.67a5.709,5.709,0,1,0-.781,8.721A1.2,1.2,0,0,0,9.29,11l3.241,3.241a1.206,1.206,0,1,0,1.706-1.706L11,9.289a1.206,1.206,0,0,0-.6-.325A5.715,5.715,0,0,0,9.744,1.67ZM8.721,8.721a4.262,4.262,0,1,1,0-6.027A4.267,4.267,0,0,1,8.721,8.721Z" transform="translate(-0.001 0)" fill="#707070"/>
+                        </svg>                      
+                    </div>
+                    <div class="header-search-input-wrap">
+                        <input class="header-search-input" placeholder="Search" type="text" name="search">
+                    </div>
+                </div>
+            </div>
+            <a href="" class="home-header__branch">
+                <img src="./assets/images/CLINIK.png" alt="">                 
+            </a>
+            <label for="functional" class="home-header__functional-mobile">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+            </label>
+            <input type="checkbox" id="functional">
+            <label for="functional" class="functional-overlay"></label>
+            <div class="home-header__functional">
+                <div class="header-functional__filter">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14.253" height="13.642" viewBox="0 0 14.253 13.642">
+                        <path id="Path_125" data-name="Path 125" d="M32.14,70.873a.508.508,0,0,1,.143.35v7.419l3.186-2.724V71.224a.508.508,0,0,1,.143-.35L41,65H26.75Z" transform="translate(-26.75 -65)" fill="#52595c"/>
+                    </svg>    
+                    <span>Filter posts</span>                  
+                </div>
+                <div class="header-functional__notify">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17.577" height="18.457" viewBox="0 0 17.577 18.457">
+                        <path id="Path_1131" data-name="Path 1131" d="M60.19,17.792l-1.509-2.515a7.472,7.472,0,0,1-1.065-3.844v-2.2a6.16,6.16,0,0,0-4.395-5.893V1.758a1.758,1.758,0,0,0-3.516,0V3.335a6.16,6.16,0,0,0-4.395,5.893v2.2a7.476,7.476,0,0,1-1.064,3.843l-1.509,2.515a.44.44,0,0,0,.376.666h16.7a.439.439,0,0,0,.377-.665Z" transform="translate(-42.675)" fill="#52595c"/>
+                    </svg>            
+                    <span>Notifycation</span>                  
+                </div>
+                <div class="header-functional__addition">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" class="svg-inline--fa fa-plus fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg> 
+                    <span>Addition post</span>                  
+                </div>
+                <div class="header-functional__setting">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cog" class="svg-inline--fa fa-cog fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M487.4 315.7l-42.6-24.6c4.3-23.2 4.3-47 0-70.2l42.6-24.6c4.9-2.8 7.1-8.6 5.5-14-11.1-35.6-30-67.8-54.7-94.6-3.8-4.1-10-5.1-14.8-2.3L380.8 110c-17.9-15.4-38.5-27.3-60.8-35.1V25.8c0-5.6-3.9-10.5-9.4-11.7-36.7-8.2-74.3-7.8-109.2 0-5.5 1.2-9.4 6.1-9.4 11.7V75c-22.2 7.9-42.8 19.8-60.8 35.1L88.7 85.5c-4.9-2.8-11-1.9-14.8 2.3-24.7 26.7-43.6 58.9-54.7 94.6-1.7 5.4.6 11.2 5.5 14L67.3 221c-4.3 23.2-4.3 47 0 70.2l-42.6 24.6c-4.9 2.8-7.1 8.6-5.5 14 11.1 35.6 30 67.8 54.7 94.6 3.8 4.1 10 5.1 14.8 2.3l42.6-24.6c17.9 15.4 38.5 27.3 60.8 35.1v49.2c0 5.6 3.9 10.5 9.4 11.7 36.7 8.2 74.3 7.8 109.2 0 5.5-1.2 9.4-6.1 9.4-11.7v-49.2c22.2-7.9 42.8-19.8 60.8-35.1l42.6 24.6c4.9 2.8 11 1.9 14.8-2.3 24.7-26.7 43.6-58.9 54.7-94.6 1.5-5.5-.7-11.3-5.6-14.1zM256 336c-44.1 0-80-35.9-80-80s35.9-80 80-80 80 35.9 80 80-35.9 80-80 80z"></path></svg> 
+                    <span>Setting</span>      
+                </div>
+                <div class="header-functional__loutout">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="sign-out-alt" class="svg-inline--fa fa-sign-out-alt fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M497 273L329 441c-15 15-41 4.5-41-17v-96H152c-13.3 0-24-10.7-24-24v-96c0-13.3 10.7-24 24-24h136V88c0-21.4 25.9-32 41-17l168 168c9.3 9.4 9.3 24.6 0 34zM192 436v-40c0-6.6-5.4-12-12-12H96c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h84c6.6 0 12-5.4 12-12V76c0-6.6-5.4-12-12-12H96c-53 0-96 43-96 96v192c0 53 43 96 96 96h84c6.6 0 12-5.4 12-12z"></path></svg>
+                    <span>Logout</span>                  
+                </div>
+                <div class="header-functional__user">
+                    <img src="./assets/images/Mask Group 107.png" alt="" class="functional-user-img">
+                    <span class="header-functional_user-name">Hà Kiều Trang</span>
+                    <label for="functional" class="header-functional__user-close"> 
+                        X
+                    </label>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6">
+                        <path id="Polygon_2" data-name="Polygon 2" d="M4.232.922a1,1,0,0,1,1.536,0L8.633,4.36A1,1,0,0,1,7.865,6H2.135a1,1,0,0,1-.768-1.64Z" transform="translate(10 6) rotate(180)" fill="#52595c"/>
+                    </svg>                      
+                </div>
+            </div>
+        </header>
+        <div class="home-content">
+            <div class="home-content__category">
+                <ul class="category-list">
+                    <li class="category-item">Schedule</li>
+                    <li class="category-item">Results</li>
+                    <li class="category-item">Music</li>
+                    <li class="category-item">News</li>
+                    <li class="category-item">Media</li>
+                    <li class="category-item">Forums</li>
+                    <li class="category-item">Polls</li>
+                    <li class="category-item">Shop</li>
+                    <li class="category-item">Social</li>
+                </ul>
+            </div>
+            <div class="home-content__post-container">
+                <div class="home-content-post">
+                    <div class="home-post-img" style="background-image: url('../home-page/assets/images/Image\ 88.jpg');">
+                    </div>
+                    <div class="home-post-content">
+                        <div class="home-post-content__header">
+                            <span class="post-content-title">MBAPPE</span>
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check-circle" class="post-content-check svg-inline--fa fa-check-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="ellipsis-h" class="post-content-option svg-inline--fa fa-ellipsis-h fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"></path></svg>
+                        </div>
+                        <span class="home-post-content__score"></span>
+                        <span class="home-post-content__name">Mbappe joins exclusive 10-man club with hat-trick at Barca</span>
+                        <span class="home-post-content__status">News</span>
+                    </div>
+                    <div class="home-post-footer">
+                        <span class="home-post-footer__time">16 days ago</span>
+                        <div class="home-post-footer__comment">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16.434" height="14" viewBox="0 0 16.434 14">
+                                <path id="Path_8" data-name="Path 8" d="M2.393,44.548H1.228l.823-.8a2.662,2.662,0,0,0,.8-1.594A5.646,5.646,0,0,1,0,37.368c0-3.382,3.213-6.82,8.245-6.82,5.331,0,8.189,3.163,8.189,6.523,0,3.383-2.889,6.543-8.189,6.543a11.459,11.459,0,0,1-2.762-.34,4.387,4.387,0,0,1-3.09,1.273Z" transform="translate(0 -30.548)" fill="#c0c9d5"/>
+                            </svg>                                          
+                            <span class="post-comment-number">21</span>
+                        </div>
+                        <div class="home-post-footer__heart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15.259" height="14" viewBox="0 0 15.259 14">
+                                <path id="ic_favorite_24px" d="M9.629,17,8.523,15.993C4.594,12.43,2,10.08,2,7.2A4.155,4.155,0,0,1,6.2,3,4.569,4.569,0,0,1,9.629,4.595,4.569,4.569,0,0,1,13.063,3a4.155,4.155,0,0,1,4.2,4.2c0,2.884-2.594,5.234-6.523,8.8Z" transform="translate(-2 -3)" fill="#c0c9d5"/>
+                            </svg>                                          
+                            <span class="post-heart-number">100</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-content-post">
+                    <div class="home-post-img" style="background-image: url('../home-page/assets/images/Image\ 80.png');">
+                    </div>
+                    <div class="home-post-content">
+                        <div class="home-post-content__header">
+                            <span class="post-content-title">STATE OF ORGIIN</span>
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check-circle" class="post-content-check svg-inline--fa fa-check-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="ellipsis-h" class="post-content-option svg-inline--fa fa-ellipsis-h fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"></path></svg>
+                        </div>
+                        <span class="home-post-content__score">1-2</span>
+                        <span class="home-post-content__name">Origin series and women's game in November</span>
+                        <span class="home-post-content__status">Results</span>
+                    </div>
+                    <div class="home-post-footer">
+                        <span class="home-post-footer__time">16 days ago</span>
+                        <div class="home-post-footer__comment">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16.434" height="14" viewBox="0 0 16.434 14">
+                                <path id="Path_8" data-name="Path 8" d="M2.393,44.548H1.228l.823-.8a2.662,2.662,0,0,0,.8-1.594A5.646,5.646,0,0,1,0,37.368c0-3.382,3.213-6.82,8.245-6.82,5.331,0,8.189,3.163,8.189,6.523,0,3.383-2.889,6.543-8.189,6.543a11.459,11.459,0,0,1-2.762-.34,4.387,4.387,0,0,1-3.09,1.273Z" transform="translate(0 -30.548)" fill="#c0c9d5"/>
+                            </svg>                                          
+                            <span class="post-comment-number">21</span>
+                        </div>
+                        <div class="home-post-footer__heart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15.259" height="14" viewBox="0 0 15.259 14">
+                                <path id="ic_favorite_24px" d="M9.629,17,8.523,15.993C4.594,12.43,2,10.08,2,7.2A4.155,4.155,0,0,1,6.2,3,4.569,4.569,0,0,1,9.629,4.595,4.569,4.569,0,0,1,13.063,3a4.155,4.155,0,0,1,4.2,4.2c0,2.884-2.594,5.234-6.523,8.8Z" transform="translate(-2 -3)" fill="#c0c9d5"/>
+                            </svg>                                          
+                            <span class="post-heart-number">100</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-content-post">
+                    <div class="home-post-img" style="background-image: url('../home-page/assets/images/Image\ 77.png');">
+                    </div>
+                    <div class="home-post-content">
+                        <div class="home-post-content__header">
+                            <span class="post-content-title">PITTSBURGH STEELERS</span>
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="ellipsis-h" class="post-content-option svg-inline--fa fa-ellipsis-h fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"></path></svg>
+                        </div>
+                        <span class="home-post-content__score"></span>
+                        <span class="home-post-content__name">Former Raven Chris Wormley realizing 'dream' with Steelers</span>
+                        <span class="home-post-content__status">News</span>
+                    </div>
+                    <div class="home-post-footer">
+                        <span class="home-post-footer__time">16 days ago</span>
+                        <div class="home-post-footer__comment">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16.434" height="14" viewBox="0 0 16.434 14">
+                                <path id="Path_8" data-name="Path 8" d="M2.393,44.548H1.228l.823-.8a2.662,2.662,0,0,0,.8-1.594A5.646,5.646,0,0,1,0,37.368c0-3.382,3.213-6.82,8.245-6.82,5.331,0,8.189,3.163,8.189,6.523,0,3.383-2.889,6.543-8.189,6.543a11.459,11.459,0,0,1-2.762-.34,4.387,4.387,0,0,1-3.09,1.273Z" transform="translate(0 -30.548)" fill="#c0c9d5"/>
+                            </svg>                                          
+                            <span class="post-comment-number">21</span>
+                        </div>
+                        <div class="home-post-footer__heart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15.259" height="14" viewBox="0 0 15.259 14">
+                                <path id="ic_favorite_24px" d="M9.629,17,8.523,15.993C4.594,12.43,2,10.08,2,7.2A4.155,4.155,0,0,1,6.2,3,4.569,4.569,0,0,1,9.629,4.595,4.569,4.569,0,0,1,13.063,3a4.155,4.155,0,0,1,4.2,4.2c0,2.884-2.594,5.234-6.523,8.8Z" transform="translate(-2 -3)" fill="#c0c9d5"/>
+                            </svg>                                          
+                            <span class="post-heart-number">100</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-content-post">
+                    <div class="home-post-img" style="background-image: url('../home-page/assets/images/Image\ 81.png');">
+                    </div>
+                    <div class="home-post-content">
+                        <div class="home-post-content__header">
+                            <span class="post-content-title">EPL</span>
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="ellipsis-h" class="post-content-option svg-inline--fa fa-ellipsis-h fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"></path></svg>
+                        </div>
+                        <span class="home-post-content__score">1-2</span>
+                        <span class="home-post-content__name">Controversy mars EPL</span>
+                        <span class="home-post-content__status">News</span>
+                    </div>
+                    <div class="home-post-footer">
+                        <span class="home-post-footer__time">16 days ago</span>
+                        <div class="home-post-footer__comment">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16.434" height="14" viewBox="0 0 16.434 14">
+                                <path id="Path_8" data-name="Path 8" d="M2.393,44.548H1.228l.823-.8a2.662,2.662,0,0,0,.8-1.594A5.646,5.646,0,0,1,0,37.368c0-3.382,3.213-6.82,8.245-6.82,5.331,0,8.189,3.163,8.189,6.523,0,3.383-2.889,6.543-8.189,6.543a11.459,11.459,0,0,1-2.762-.34,4.387,4.387,0,0,1-3.09,1.273Z" transform="translate(0 -30.548)" fill="#c0c9d5"/>
+                            </svg>                                          
+                            <span class="post-comment-number">21</span>
+                        </div>
+                        <div class="home-post-footer__heart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15.259" height="14" viewBox="0 0 15.259 14">
+                                <path id="ic_favorite_24px" d="M9.629,17,8.523,15.993C4.594,12.43,2,10.08,2,7.2A4.155,4.155,0,0,1,6.2,3,4.569,4.569,0,0,1,9.629,4.595,4.569,4.569,0,0,1,13.063,3a4.155,4.155,0,0,1,4.2,4.2c0,2.884-2.594,5.234-6.523,8.8Z" transform="translate(-2 -3)" fill="#c0c9d5"/>
+                            </svg>                                          
+                            <span class="post-heart-number">100</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-content-post">
+                    <div class="home-post-img" style="background-image: url('../home-page/assets/images/Image\ 86.jpg');">
+                    </div>
+                    <div class="home-post-content">
+                        <div class="home-post-content__header">
+                            <span class="post-content-title">LEWIS HAMILTOn</span>
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="ellipsis-h" class="post-content-option svg-inline--fa fa-ellipsis-h fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"></path></svg>
+                        </div>
+                        <span class="home-post-content__score"></span>
+                        <span class="home-post-content__name">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                        <span class="home-post-content__status">Status</span>
+                    </div>
+                    <div class="home-post-footer">
+                        <span class="home-post-footer__time">16 days ago</span>
+                        <div class="home-post-footer__comment">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16.434" height="14" viewBox="0 0 16.434 14">
+                                <path id="Path_8" data-name="Path 8" d="M2.393,44.548H1.228l.823-.8a2.662,2.662,0,0,0,.8-1.594A5.646,5.646,0,0,1,0,37.368c0-3.382,3.213-6.82,8.245-6.82,5.331,0,8.189,3.163,8.189,6.523,0,3.383-2.889,6.543-8.189,6.543a11.459,11.459,0,0,1-2.762-.34,4.387,4.387,0,0,1-3.09,1.273Z" transform="translate(0 -30.548)" fill="#c0c9d5"/>
+                            </svg>                                          
+                            <span class="post-comment-number">21</span>
+                        </div>
+                        <div class="home-post-footer__heart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15.259" height="14" viewBox="0 0 15.259 14">
+                                <path id="ic_favorite_24px" d="M9.629,17,8.523,15.993C4.594,12.43,2,10.08,2,7.2A4.155,4.155,0,0,1,6.2,3,4.569,4.569,0,0,1,9.629,4.595,4.569,4.569,0,0,1,13.063,3a4.155,4.155,0,0,1,4.2,4.2c0,2.884-2.594,5.234-6.523,8.8Z" transform="translate(-2 -3)" fill="#c0c9d5"/>
+                            </svg>                                          
+                            <span class="post-heart-number">100</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-content-post">
+                    <div class="home-post-img" style="background-image: url('../home-page/assets/images/Image\ 83.png');">
+                    </div>
+                    <div class="home-post-content">
+                        <div class="home-post-content__header">
+                            <span class="post-content-title">EPL</span>
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="ellipsis-h" class="post-content-option svg-inline--fa fa-ellipsis-h fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"></path></svg>
+                        </div>
+                        <span class="home-post-content__score"></span>
+                        <span class="home-post-content__name">Injuries, red cards and a $640k-a-week problem: How Arsenal got even worse after lockdown</span>
+                        <span class="home-post-content__status">News</span>
+                    </div>
+                    <div class="home-post-footer">
+                        <span class="home-post-footer__time">16 days ago</span>
+                        <div class="home-post-footer__comment">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16.434" height="14" viewBox="0 0 16.434 14">
+                                <path id="Path_8" data-name="Path 8" d="M2.393,44.548H1.228l.823-.8a2.662,2.662,0,0,0,.8-1.594A5.646,5.646,0,0,1,0,37.368c0-3.382,3.213-6.82,8.245-6.82,5.331,0,8.189,3.163,8.189,6.523,0,3.383-2.889,6.543-8.189,6.543a11.459,11.459,0,0,1-2.762-.34,4.387,4.387,0,0,1-3.09,1.273Z" transform="translate(0 -30.548)" fill="#c0c9d5"/>
+                            </svg>                                          
+                            <span class="post-comment-number">21</span>
+                        </div>
+                        <div class="home-post-footer__heart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15.259" height="14" viewBox="0 0 15.259 14">
+                                <path id="ic_favorite_24px" d="M9.629,17,8.523,15.993C4.594,12.43,2,10.08,2,7.2A4.155,4.155,0,0,1,6.2,3,4.569,4.569,0,0,1,9.629,4.595,4.569,4.569,0,0,1,13.063,3a4.155,4.155,0,0,1,4.2,4.2c0,2.884-2.594,5.234-6.523,8.8Z" transform="translate(-2 -3)" fill="#c0c9d5"/>
+                            </svg>                                          
+                            <span class="post-heart-number">100</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-content-post">
+                    <div class="home-post-img" style="background-image: url('../home-page/assets/images/Image\ 78.png');">
+                    </div>
+                    <div class="home-post-content">
+                        <div class="home-post-content__header">
+                            <span class="post-content-title">EPL</span>
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="ellipsis-h" class="post-content-option svg-inline--fa fa-ellipsis-h fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"></path></svg>
+                        </div>
+                        <span class="home-post-content__score"></span>
+                        <span class="home-post-content__name">Eric Garcia taken off on a stretcher after sickening collision in Manchester City’s win over Arsenal</span>
+                        <span class="home-post-content__status">Poll</span>
+                    </div>
+                    <div class="home-post-footer">
+                        <span class="home-post-footer__time">16 days ago</span>
+                        <div class="home-post-footer__comment">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16.434" height="14" viewBox="0 0 16.434 14">
+                                <path id="Path_8" data-name="Path 8" d="M2.393,44.548H1.228l.823-.8a2.662,2.662,0,0,0,.8-1.594A5.646,5.646,0,0,1,0,37.368c0-3.382,3.213-6.82,8.245-6.82,5.331,0,8.189,3.163,8.189,6.523,0,3.383-2.889,6.543-8.189,6.543a11.459,11.459,0,0,1-2.762-.34,4.387,4.387,0,0,1-3.09,1.273Z" transform="translate(0 -30.548)" fill="#c0c9d5"/>
+                            </svg>                                          
+                            <span class="post-comment-number">21</span>
+                        </div>
+                        <div class="home-post-footer__heart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15.259" height="14" viewBox="0 0 15.259 14">
+                                <path id="ic_favorite_24px" d="M9.629,17,8.523,15.993C4.594,12.43,2,10.08,2,7.2A4.155,4.155,0,0,1,6.2,3,4.569,4.569,0,0,1,9.629,4.595,4.569,4.569,0,0,1,13.063,3a4.155,4.155,0,0,1,4.2,4.2c0,2.884-2.594,5.234-6.523,8.8Z" transform="translate(-2 -3)" fill="#c0c9d5"/>
+                            </svg>                                          
+                            <span class="post-heart-number">100</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-content-post">
+                    <div class="home-post-img" style="background-image: url('../home-page/assets/images/Image\ 84.png');">
+                    </div>
+                    <div class="home-post-content">
+                        <div class="home-post-content__header">
+                            <span class="post-content-title">QUEEN</span>
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="ellipsis-h" class="post-content-option svg-inline--fa fa-ellipsis-h fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"></path></svg>
+                        </div>
+                        <span class="home-post-content__score"></span>
+                        <span class="home-post-content__name">10 incredible facts we learnt about Queen from the music special</span>
+                        <span class="home-post-content__status">News</span>
+                    </div>
+                    <div class="home-post-footer">
+                        <span class="home-post-footer__time">16 days ago</span>
+                        <div class="home-post-footer__comment">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16.434" height="14" viewBox="0 0 16.434 14">
+                                <path id="Path_8" data-name="Path 8" d="M2.393,44.548H1.228l.823-.8a2.662,2.662,0,0,0,.8-1.594A5.646,5.646,0,0,1,0,37.368c0-3.382,3.213-6.82,8.245-6.82,5.331,0,8.189,3.163,8.189,6.523,0,3.383-2.889,6.543-8.189,6.543a11.459,11.459,0,0,1-2.762-.34,4.387,4.387,0,0,1-3.09,1.273Z" transform="translate(0 -30.548)" fill="#c0c9d5"/>
+                            </svg>                                          
+                            <span class="post-comment-number">21</span>
+                        </div>
+                        <div class="home-post-footer__heart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15.259" height="14" viewBox="0 0 15.259 14">
+                                <path id="ic_favorite_24px" d="M9.629,17,8.523,15.993C4.594,12.43,2,10.08,2,7.2A4.155,4.155,0,0,1,6.2,3,4.569,4.569,0,0,1,9.629,4.595,4.569,4.569,0,0,1,13.063,3a4.155,4.155,0,0,1,4.2,4.2c0,2.884-2.594,5.234-6.523,8.8Z" transform="translate(-2 -3)" fill="#c0c9d5"/>
+                            </svg>                                          
+                            <span class="post-heart-number">100</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-content-post">
+                    <div class="home-post-img" style="background-image: url('../home-page/assets/images/Image\ 79.png');">
+                    </div>
+                    <div class="home-post-content">
+                        <div class="home-post-content__header">
+                            <span class="post-content-title">PITTSBURGH STEELERS</span>
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="ellipsis-h" class="post-content-option svg-inline--fa fa-ellipsis-h fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"></path></svg>
+                        </div>
+                        <span class="home-post-content__score"></span>
+                        <span class="home-post-content__name">Steelers to Close Facility in Observance of Juneteenth</span>
+                        <span class="home-post-content__status">Photo</span>
+                    </div>
+                    <div class="home-post-footer">
+                        <span class="home-post-footer__time">16 days ago</span>
+                        <div class="home-post-footer__comment">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16.434" height="14" viewBox="0 0 16.434 14">
+                                <path id="Path_8" data-name="Path 8" d="M2.393,44.548H1.228l.823-.8a2.662,2.662,0,0,0,.8-1.594A5.646,5.646,0,0,1,0,37.368c0-3.382,3.213-6.82,8.245-6.82,5.331,0,8.189,3.163,8.189,6.523,0,3.383-2.889,6.543-8.189,6.543a11.459,11.459,0,0,1-2.762-.34,4.387,4.387,0,0,1-3.09,1.273Z" transform="translate(0 -30.548)" fill="#c0c9d5"/>
+                            </svg>                                          
+                            <span class="post-comment-number">21</span>
+                        </div>
+                        <div class="home-post-footer__heart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15.259" height="14" viewBox="0 0 15.259 14">
+                                <path id="ic_favorite_24px" d="M9.629,17,8.523,15.993C4.594,12.43,2,10.08,2,7.2A4.155,4.155,0,0,1,6.2,3,4.569,4.569,0,0,1,9.629,4.595,4.569,4.569,0,0,1,13.063,3a4.155,4.155,0,0,1,4.2,4.2c0,2.884-2.594,5.234-6.523,8.8Z" transform="translate(-2 -3)" fill="#c0c9d5"/>
+                            </svg>                                          
+                            <span class="post-heart-number">100</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-content-post">
+                    <div class="home-post-img" style="background-image: url('../home-page/assets/images/Image\ 85.png');">
+                    </div>
+                    <div class="home-post-content">
+                        <div class="home-post-content__header">
+                            <span class="post-content-title">Pittsburgh Steelers</span>
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="ellipsis-h" class="post-content-option svg-inline--fa fa-ellipsis-h fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"></path></svg>
+                        </div>
+                        <span class="home-post-content__score"></span>
+                        <span class="home-post-content__name">Josh Harris and David Blitzer are minority owners</span>
+                        <span class="home-post-content__date">2 Jun 2020 9:00 Center Park</span>
+                        <span class="home-post-content__status">Event</span>
+                    </div>
+                    <div class="home-post-footer">
+                        <span class="home-post-footer__time">16 days ago</span>
+                        <div class="home-post-footer__comment">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16.434" height="14" viewBox="0 0 16.434 14">
+                                <path id="Path_8" data-name="Path 8" d="M2.393,44.548H1.228l.823-.8a2.662,2.662,0,0,0,.8-1.594A5.646,5.646,0,0,1,0,37.368c0-3.382,3.213-6.82,8.245-6.82,5.331,0,8.189,3.163,8.189,6.523,0,3.383-2.889,6.543-8.189,6.543a11.459,11.459,0,0,1-2.762-.34,4.387,4.387,0,0,1-3.09,1.273Z" transform="translate(0 -30.548)" fill="#c0c9d5"/>
+                            </svg>                                          
+                            <span class="post-comment-number">21</span>
+                        </div>
+                        <div class="home-post-footer__heart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15.259" height="14" viewBox="0 0 15.259 14">
+                                <path id="ic_favorite_24px" d="M9.629,17,8.523,15.993C4.594,12.43,2,10.08,2,7.2A4.155,4.155,0,0,1,6.2,3,4.569,4.569,0,0,1,9.629,4.595,4.569,4.569,0,0,1,13.063,3a4.155,4.155,0,0,1,4.2,4.2c0,2.884-2.594,5.234-6.523,8.8Z" transform="translate(-2 -3)" fill="#c0c9d5"/>
+                            </svg>                                          
+                            <span class="post-heart-number">100</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-content-post">
+                    <div class="home-post-img" style="background-image: url('../home-page/assets/images/Image\ 91.jpg');">
+                    </div>
+                    <div class="home-post-content">
+                        <div class="home-post-content__header">
+                            <span class="post-content-title">RECIPE CAKE</span>
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="ellipsis-h" class="post-content-option svg-inline--fa fa-ellipsis-h fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"></path></svg>
+                        </div>
+                        <span class="home-post-content__score"></span>
+                        <span class="home-post-content__name">Disney + Will July Debut ‘Black Is King’, Beyoncé’s New Visual Album – Deadline</span>
+                        <span class="home-post-content__status">Photo</span>
+                    </div>
+                    <div class="home-post-footer">
+                        <span class="home-post-footer__time">5 months ago</span>
+                        <div class="home-post-footer__comment">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16.434" height="14" viewBox="0 0 16.434 14">
+                                <path id="Path_8" data-name="Path 8" d="M2.393,44.548H1.228l.823-.8a2.662,2.662,0,0,0,.8-1.594A5.646,5.646,0,0,1,0,37.368c0-3.382,3.213-6.82,8.245-6.82,5.331,0,8.189,3.163,8.189,6.523,0,3.383-2.889,6.543-8.189,6.543a11.459,11.459,0,0,1-2.762-.34,4.387,4.387,0,0,1-3.09,1.273Z" transform="translate(0 -30.548)" fill="#c0c9d5"/>
+                            </svg>                                          
+                            <span class="post-comment-number">31</span>
+                        </div>
+                        <div class="home-post-footer__heart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15.259" height="14" viewBox="0 0 15.259 14">
+                                <path id="ic_favorite_24px" d="M9.629,17,8.523,15.993C4.594,12.43,2,10.08,2,7.2A4.155,4.155,0,0,1,6.2,3,4.569,4.569,0,0,1,9.629,4.595,4.569,4.569,0,0,1,13.063,3a4.155,4.155,0,0,1,4.2,4.2c0,2.884-2.594,5.234-6.523,8.8Z" transform="translate(-2 -3)" fill="#c0c9d5"/>
+                            </svg>                                          
+                            <span class="post-heart-number">214</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-content-post">
+                    <div class="home-post-img" style="background-image: url('../home-page/assets/images/Image\ 87.jpg');">
+                    </div>
+                    <div class="home-post-content">
+                        <div class="home-post-content__header">
+                            <span class="post-content-title">DIALLO</span>
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="ellipsis-h" class="post-content-option svg-inline--fa fa-ellipsis-h fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"></path></svg>
+                        </div>
+                        <span class="home-post-content__score"></span>
+                        <span class="home-post-content__name">Tân binh MU 1160 tỷ đồng: "Đứa con thần gió" Amad Diallo tài năng ra sao?</span>
+                        <span class="home-post-content__status">News</span>
+                    </div>
+                    <div class="home-post-footer">
+                        <span class="home-post-footer__time">2 months ago</span>
+                        <div class="home-post-footer__comment">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16.434" height="14" viewBox="0 0 16.434 14">
+                                <path id="Path_8" data-name="Path 8" d="M2.393,44.548H1.228l.823-.8a2.662,2.662,0,0,0,.8-1.594A5.646,5.646,0,0,1,0,37.368c0-3.382,3.213-6.82,8.245-6.82,5.331,0,8.189,3.163,8.189,6.523,0,3.383-2.889,6.543-8.189,6.543a11.459,11.459,0,0,1-2.762-.34,4.387,4.387,0,0,1-3.09,1.273Z" transform="translate(0 -30.548)" fill="#c0c9d5"/>
+                            </svg>                                          
+                            <span class="post-comment-number">18</span>
+                        </div>
+                        <div class="home-post-footer__heart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15.259" height="14" viewBox="0 0 15.259 14">
+                                <path id="ic_favorite_24px" d="M9.629,17,8.523,15.993C4.594,12.43,2,10.08,2,7.2A4.155,4.155,0,0,1,6.2,3,4.569,4.569,0,0,1,9.629,4.595,4.569,4.569,0,0,1,13.063,3a4.155,4.155,0,0,1,4.2,4.2c0,2.884-2.594,5.234-6.523,8.8Z" transform="translate(-2 -3)" fill="#c0c9d5"/>
+                            </svg>                                          
+                            <span class="post-heart-number">112</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-content-post">
+                    <div class="home-post-img" style="background-image: url('../home-page/assets/images/Image\ 90.jpg');">
+                    </div>
+                    <div class="home-post-content">
+                        <div class="home-post-content__header">
+                            <span class="post-content-title">RONALDO</span>
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="ellipsis-h" class="post-content-option svg-inline--fa fa-ellipsis-h fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"></path></svg>
+                        </div>
+                        <span class="home-post-content__score"></span>
+                        <span class="home-post-content__name">Football: Ronaldo marks 600th league game with landmark goal as Juve beat Spezia.</span>
+                        <span class="home-post-content__status">News</span>
+                    </div>
+                    <div class="home-post-footer">
+                        <span class="home-post-footer__time">3 months ago</span>
+                        <div class="home-post-footer__comment">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16.434" height="14" viewBox="0 0 16.434 14">
+                                <path id="Path_8" data-name="Path 8" d="M2.393,44.548H1.228l.823-.8a2.662,2.662,0,0,0,.8-1.594A5.646,5.646,0,0,1,0,37.368c0-3.382,3.213-6.82,8.245-6.82,5.331,0,8.189,3.163,8.189,6.523,0,3.383-2.889,6.543-8.189,6.543a11.459,11.459,0,0,1-2.762-.34,4.387,4.387,0,0,1-3.09,1.273Z" transform="translate(0 -30.548)" fill="#c0c9d5"/>
+                            </svg>                                          
+                            <span class="post-comment-number">238</span>
+                        </div>
+                        <div class="home-post-footer__heart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15.259" height="14" viewBox="0 0 15.259 14">
+                                <path id="ic_favorite_24px" d="M9.629,17,8.523,15.993C4.594,12.43,2,10.08,2,7.2A4.155,4.155,0,0,1,6.2,3,4.569,4.569,0,0,1,9.629,4.595,4.569,4.569,0,0,1,13.063,3a4.155,4.155,0,0,1,4.2,4.2c0,2.884-2.594,5.234-6.523,8.8Z" transform="translate(-2 -3)" fill="#c0c9d5"/>
+                            </svg>                                          
+                            <span class="post-heart-number">462</span>
+                        </div>
+                    </div>
+                </div>
+                 <div class="home-content-post">
+                    <div class="home-post-img" style="background-image: url('../home-page/assets/images/haaland-thImage\ 89.jpg');">
+                    </div>
+                    <div class="home-post-content">
+                        <div class="home-post-content__header">
+                            <span class="post-content-title">Haaland</span>
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check-circle" class="post-content-check svg-inline--fa fa-check-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="ellipsis-h" class="post-content-option svg-inline--fa fa-ellipsis-h fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"></path></svg>
+                        </div>
+                        <span class="home-post-content__score"></span>
+                        <span class="home-post-content__name">Haaland thanks Mbappe for providing Champions League 'motivation'</span>
+                        <span class="home-post-content__status">News</span>
+                    </div>
+                    <div class="home-post-footer">
+                        <span class="home-post-footer__time">4 Months ago</span>
+                        <div class="home-post-footer__comment">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16.434" height="14" viewBox="0 0 16.434 14">
+                                <path id="Path_8" data-name="Path 8" d="M2.393,44.548H1.228l.823-.8a2.662,2.662,0,0,0,.8-1.594A5.646,5.646,0,0,1,0,37.368c0-3.382,3.213-6.82,8.245-6.82,5.331,0,8.189,3.163,8.189,6.523,0,3.383-2.889,6.543-8.189,6.543a11.459,11.459,0,0,1-2.762-.34,4.387,4.387,0,0,1-3.09,1.273Z" transform="translate(0 -30.548)" fill="#c0c9d5"/>
+                            </svg>                                          
+                            <span class="post-comment-number">76</span>
+                        </div>
+                        <div class="home-post-footer__heart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15.259" height="14" viewBox="0 0 15.259 14">
+                                <path id="ic_favorite_24px" d="M9.629,17,8.523,15.993C4.594,12.43,2,10.08,2,7.2A4.155,4.155,0,0,1,6.2,3,4.569,4.569,0,0,1,9.629,4.595,4.569,4.569,0,0,1,13.063,3a4.155,4.155,0,0,1,4.2,4.2c0,2.884-2.594,5.234-6.523,8.8Z" transform="translate(-2 -3)" fill="#c0c9d5"/>
+                            </svg>                                          
+                            <span class="post-heart-number">156</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-content-post">
+                    <div class="home-post-img" style="background-image: url('../home-page/assets/images/Image\ 70.png');">
+                    </div>
+                    <div class="home-post-content">
+                        <div class="home-post-content__header">
+                            <span class="post-content-title">ELTON JOHN</span>
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check-circle" class="post-content-check svg-inline--fa fa-check-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="ellipsis-h" class="post-content-option svg-inline--fa fa-ellipsis-h fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"></path></svg>
+                        </div>
+                        <span class="home-post-content__score"></span>
+                        <span class="home-post-content__name">Elton John tops rock earnings list</span>
+                        <span class="home-post-content__status">News</span>
+                    </div>
+                    <div class="home-post-footer">
+                        <span class="home-post-footer__time">16 Days ago</span>
+                        <div class="home-post-footer__comment">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16.434" height="14" viewBox="0 0 16.434 14">
+                                <path id="Path_8" data-name="Path 8" d="M2.393,44.548H1.228l.823-.8a2.662,2.662,0,0,0,.8-1.594A5.646,5.646,0,0,1,0,37.368c0-3.382,3.213-6.82,8.245-6.82,5.331,0,8.189,3.163,8.189,6.523,0,3.383-2.889,6.543-8.189,6.543a11.459,11.459,0,0,1-2.762-.34,4.387,4.387,0,0,1-3.09,1.273Z" transform="translate(0 -30.548)" fill="#c0c9d5"/>
+                            </svg>                                          
+                            <span class="post-comment-number">21</span>
+                        </div>
+                        <div class="home-post-footer__heart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15.259" height="14" viewBox="0 0 15.259 14">
+                                <path id="ic_favorite_24px" d="M9.629,17,8.523,15.993C4.594,12.43,2,10.08,2,7.2A4.155,4.155,0,0,1,6.2,3,4.569,4.569,0,0,1,9.629,4.595,4.569,4.569,0,0,1,13.063,3a4.155,4.155,0,0,1,4.2,4.2c0,2.884-2.594,5.234-6.523,8.8Z" transform="translate(-2 -3)" fill="#c0c9d5"/>
+                            </svg>                                          
+                            <span class="post-heart-number">100</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
