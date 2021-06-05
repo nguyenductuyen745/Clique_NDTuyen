@@ -1,0 +1,239 @@
+.clique * {
+  transition: width, opacity, padding, transform, margin 0.3s linear;
+}
+
+.clique {
+  overflow-x: hidden;
+  position: relative;
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../images/Mask Group 129.png");
+}
+.clique::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #b9b9b9;
+}
+.clique::-webkit-scrollbar {
+  width: 6px;
+  background-color: #F5F5F5;
+}
+.clique::-webkit-scrollbar-thumb {
+  background-color: #1f1e1e;
+}
+.clique::after {
+  top: 0;
+  left: -6px;
+  content: "";
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 39%;
+  background-image: linear-gradient(var(--black-color), transparent);
+}
+.clique::before {
+  left: -6px;
+  bottom: 0;
+  content: "";
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 43%;
+  background-image: linear-gradient(transparent, var(--black-color));
+}
+.clique-branch {
+  z-index: 1;
+  position: relative;
+  margin-top: 4.2rem;
+  transition: all 0.3s linear;
+}
+.clique-modal {
+  z-index: 1;
+  padding: 3.6rem 5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  margin-top: 8.1rem;
+}
+.clique-modal__title {
+  color: white;
+  margin-top: 1rem;
+  font-size: 3.6rem;
+  font-weight: bold;
+  line-height: 6rem;
+}
+.clique-modal__form-login {
+  margin-top: 3rem;
+}
+.clique-modal__form-login input {
+  outline: none;
+  font-size: 1.6rem;
+  transition: all 0.3s linear;
+}
+.clique-modal__form-login input::placeholder {
+  font-size: 1.6rem;
+  color: transparent;
+}
+.clique-modal__form-login input:focus ~ label, .clique-modal__form-login input:not(:placeholder-shown) ~ label {
+  font-size: 1.2rem;
+  top: 0;
+}
+.clique-modal__form-login .form-login-password, .clique-modal__form-login .form-login-email {
+  overflow: hidden;
+  padding: 20px 20px 10px 20px;
+  position: relative;
+  margin-bottom: 1.4rem;
+  border-radius: 0.3rem;
+  color: var(--black-color);
+  transition: all 0.3s linear;
+  background-color: var(--white-color);
+}
+.clique-modal__form-login .form-login-email__input {
+  outline: none;
+}
+.clique-modal__form-login .form-login-email__label {
+  top: 15px;
+  left: 20px;
+  cursor: text;
+  line-height: 3rem;
+  font-size: 1.6rem;
+  position: absolute;
+  transition: all 0.2s linear;
+}
+.clique-modal__form-login .form-login-password__input {
+  outline: none;
+}
+.clique-modal__form-login .form-login-password__label {
+  top: 15px;
+  left: 20px;
+  cursor: text;
+  line-height: 3rem;
+  font-size: 1.6rem;
+  position: absolute;
+  transition: all 0.2s linear;
+}
+.clique-modal__fogot-password {
+  float: right;
+  font-size: 1.2rem;
+  margin-top: 1.3rem;
+  display: inline-block;
+  color: var(--white-color);
+}
+.clique-modal__fogot-password:hover {
+  text-decoration: none;
+}
+.clique-modal__seperate {
+  clear: both;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 3.7rem;
+  width: 100%;
+  height: 2rem;
+}
+.clique-modal__seperate::after {
+  left: 0;
+  top: 50%;
+  width: 35%;
+  content: "";
+  display: block;
+  position: absolute;
+  transform: translateY(-50%);
+  border-top: 1px solid #707070;
+}
+.clique-modal__seperate::before {
+  top: 50%;
+  right: 0;
+  width: 35%;
+  content: "";
+  display: block;
+  position: absolute;
+  transform: translateY(-50%);
+  border-top: 1px solid #707070;
+}
+.clique-modal__seperate label {
+  color: var(--white-color);
+  position: relative;
+  z-index: 1;
+  color: #A8A8A8;
+  font-size: 1.4rem;
+  display: block;
+  width: 200px;
+  text-align: center;
+}
+.clique-modal__social {
+  width: 100%;
+  margin-top: 1.6rem;
+}
+.clique-modal__social-item {
+  width: 100%;
+  display: flex;
+  border-radius: 3px;
+  margin-bottom: 1.4rem;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 1.6rem;
+  transition: all 0.3s;
+}
+.clique-modal__social-item span {
+  font-size: 1.6rem;
+  margin: auto;
+  line-height: 2.5rem;
+  color: var(--white-color);
+}
+.clique-modal__social .social-item--twitter {
+  background-color: #3CA6CC;
+}
+.clique-modal__social .social-item--facebook {
+  background-color: #264F88;
+}
+.clique-modal__new-register {
+  margin-top: 3.2rem;
+  font-size: 1.6rem;
+  text-align: center;
+  color: var(--white-color);
+}
+.clique-modal__new-register a {
+  color: red;
+}
+.clique-modal__new-register a:hover {
+  text-decoration: none;
+}
+.clique-vender-login {
+  z-index: 1;
+  color: #A8A8A8;
+  position: relative;
+  font-size: 1.6rem;
+  margin-top: 3rem;
+  margin-bottom: 4.8rem;
+}
+.clique-vender-login a {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+.form-login-submit {
+  font-size: 1.6rem;
+  color: white;
+  line-height: 2.6rem;
+  text-align: center;
+  border-radius: 0.3rem;
+  padding: 1rem 2rem;
+  transition: all 0.3s;
+  background-color: #2F9A4C;
+  width: 100%;
+  height: 4.5rem;
+}
+
+.form-login-password__input, .form-login-email__input {
+  width: 30.2rem;
+  height: 3rem;
+}
+
+/*# sourceMappingURL=login.css.map */

@@ -90,13 +90,13 @@
         flex-direction: column;
     }
 
-    .register-field {
+    .clique-modal .register-group-fields__row .register-field {
         width: 100%;
         padding: 10px 20px;
         margin: 0.7rem 0.75rem;
     }
 
-    .register-field__input {
+    .clique-modal .register-group-fields__row .register-field__input {
         width: 100%;
     }
 
@@ -118,15 +118,15 @@
         padding: 1.4rem 2rem;
     }
 
-    .register-field {
+    .clique-modal .register-group-fields__row .register-field {
         margin: 0.5rem 0.75rem;
     }
 
-    .register-optional--back {
+    .clique-modal .register-group-fields .register-optional--back {
         margin-right: 0.5rem;
     }
 
-    .register-optional--next {
+    .clique-modal .register-group-fields .register-optional--next {
         margin-left: 0.5rem;
     }
 }

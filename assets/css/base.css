@@ -14,3 +14,9 @@ html {
     font-size: 62.5%;
     font-family: Helvetica, sans-serif;
 }
+
+.btn-hover:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
