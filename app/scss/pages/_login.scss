@@ -1,21 +1,25 @@
-@import "../abstracts/variables";
-@import "../abstracts/mixin";
+@import "../abstracts/_variables.scss";
+@import "../abstracts/mixins.scss";
 
 .clique * {
     transition: width, opacity, padding, transform, margin 0.3s linear;
 }
 
 .clique {
+    width: 100%;
     overflow-x: hidden;
     position: relative;
     align-items: center;
     display: inline-flex;
     flex-direction: column;
     background-size: cover;
-    @include size(100%, 100vh);
     background-position: center;
     background-repeat: no-repeat;
     background-image: url('../images/Mask\ Group\ 129.png');
+
+    @include maxWidth(399px) {
+        padding: 0 10px;
+    }
 
     &::-webkit-scrollbar-track
     {
@@ -27,6 +31,10 @@
     {
         width: 6px;
         background-color: #F5F5F5;
+
+        @include maxWidth(600px) {
+            display: none;
+        }
     }
 
     &::-webkit-scrollbar-thumb
@@ -42,6 +50,11 @@
         position: fixed;
         @include size(100%, 39%);
         background-image: linear-gradient(var(--black-color), transparent);
+
+        @include maxWidth(600px) {
+            left: 0;
+            height: 24vh !important;
+        }
     }
     
     &::before {
@@ -52,21 +65,54 @@
         position: fixed;
         @include size(100%, 43%);
         background-image: linear-gradient(transparent, var(--black-color));
+    
+        @include maxWidth(600px) {
+            left: 0;
+            height: 25vh !important;
+        }
     }
 
-    &-branch {
+    &-branch-login {
         z-index: 1;
         position: relative;
         margin-top: 4.2rem;
         transition: all 0.3s linear;
+
+        @include maxWidth(600px) {
+            transform: scale(0.9);
+        }
+
+        @include maxWidth(399px) {
+            transform: scale(0.8);
+            margin-top: 3.2rem;
+        }
+
+        @include minWidth(1600px) {
+            transform: scale(1.1);
+        }
+
+        @include minHeight(1050px) {
+            margin-top: 6rem;
+        }
     }
     
-    &-modal {
+    &-modal-login {
         z-index: 1;
         padding: 3.6rem 5rem;
         background-color: rgba(0, 0, 0, 0.5);
         position: relative;
         margin-top: 8.1rem;
+
+        @include maxWidth(600px) {
+            margin-top: 4.6rem;
+            padding: 1.2rem 3rem;
+        }
+
+        @include maxWidth(399px) {
+            width: 100%;
+            margin-top: 3.5rem;
+            padding: 0 2rem;
+        }
 
         &__title {
             color: white;
@@ -74,16 +120,44 @@
             font-size: 3.6rem;
             font-weight: bold;
             line-height: 6rem;
+
+            @include maxWidth(600px) {
+                font-size: 3.1rem;
+            }
+
+            @include maxWidth(399px) {
+                font-size: 2.9rem;
+            }
         }
         
         &__form-login {
             margin-top: 3rem;
+
+            @include maxWidth(600px) {
+                display: flex;
+                padding: 0 20px;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 2rem;
+            }
+
+            @include maxWidth(399px) {
+                padding: 0;
+            }
+
+            @include minHeight(1050px) {
+                margin-top: 4.5rem;
+            }
 
             input {
                 outline: none;
                 font-size: 1.6rem;
                 transition: all 0.3s linear;
             
+                @include maxWidth(399px) {
+                    width: 100%;
+                }
+
                 &::placeholder {
                     font-size: 1.6rem;
                     color: transparent;
@@ -105,6 +179,24 @@
                 color: var(--black-color);
                 transition: all 0.3s linear;
                 background-color: var(--white-color);
+
+                @include maxWidth(399px) {
+                    width: 100%;
+                }
+
+                @include minHeight(1050px) {
+                    margin-bottom: 1.7rem;
+                }
+            }
+            %form-login-email-password-input {
+                @include maxWidth(600px) {
+                    width: 240px;
+                    height: 2.6rem;
+                }
+
+                @include minWidth(1600px) {
+                    width: 44rem;
+                }
             }
 
             .form-login-email {
@@ -112,6 +204,8 @@
             
                 &__input {
                     outline: none;
+
+                    @extend %form-login-email-password-input;
                 }
 
                 &__label {
@@ -130,6 +224,8 @@
             
                 &__input {
                     outline: none;
+
+                    @extend %form-login-email-password-input;
                 }
 
                 &__label {
@@ -151,6 +247,15 @@
             display: inline-block;
             color: var(--white-color);
 
+            @include maxWidth(600px) {
+                margin-right: 20px;
+            }
+
+            @include minHeight(1050px) {
+                font-size: 1.4rem;
+                margin-top: 1.6rem;
+            }
+
             &:hover {
                 text-decoration: none;
             }
@@ -163,6 +268,10 @@
             margin-top: 3.7rem;
             @include size(100%, 2rem);
 
+            @include minHeight(1050px) {
+                margin-top: 4.5rem;
+            }
+
             &::after {
                 left: 0;
                 top: 50%;
@@ -172,6 +281,11 @@
                 position: absolute;
                 transform: translateY(-50%);
                 border-top: 1px solid #707070;
+
+                @include maxWidth(600px) {
+                    left: 20px;
+                    width: calc(35% - 21px);
+                }
             }
 
             &::before {
@@ -183,6 +297,11 @@
                 position: absolute;
                 transform: translateY(-50%);
                 border-top: 1px solid #707070;
+
+                @include maxWidth(600px) {
+                    right: 20px;
+                    width: calc(35% - 20px);
+                }
             }
 
             label {
@@ -201,6 +320,11 @@
             width: 100%;
             margin-top: 1.6rem;
 
+            @include maxWidth(600px) {
+                display: flex;
+                flex-direction: column;
+            }
+
             &-item {
                 width: 100%;
                 display: flex;
@@ -210,6 +334,24 @@
                 text-align: center;
                 padding: 1rem 1.6rem;
                 transition: all 0.3s;
+
+                @include maxWidth(600px) {
+                    width: calc(100% - 40px);
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                @include maxWidth(399px) {
+                    width: 100%;
+                }
+
+                @include minWidth(1600px) {
+                    padding: 1.2rem 2.3rem;
+                }
+
+                @include minHeight(1050px) {
+                    margin-bottom: 1.7rem;
+                }
 
                 span {
                     font-size: 1.6rem;
@@ -234,6 +376,14 @@
             text-align: center;
             color: var(--white-color);
             
+            @include maxWidth(600px) {
+                margin-top: 2.2rem;
+            }
+
+            @include minHeight(1050px) {
+                margin-top: 5rem;
+            }
+
             a {
                 color: red;
 
@@ -251,6 +401,14 @@
         font-size: 1.6rem;
         margin-top: 3rem;
         margin-bottom: 4.8rem;
+
+        @include maxWidth(600px) {
+            margin-bottom: 3.8rem;
+        }
+
+        @include minHeight(1050px) {
+            margin-top: 5rem;
+        }
 
         a {
             font-weight: bold;
@@ -270,6 +428,15 @@
     transition: all 0.3s;
     background-color: #2F9A4C;
     @include size(100%, 4.5rem);
+
+    @include maxWidth(600px) {
+        width: 100%;
+    }
+
+    @include minWidth(1600px) {
+        height: 5rem;
+        width: 100%;
+    }
 }
 
 .form-login-password__input, .form-login-email__input {

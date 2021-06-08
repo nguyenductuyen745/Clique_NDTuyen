@@ -1,0 +1,436 @@
+.clique * {
+  transition: width, opacity, padding, transform, margin 0.3s linear;
+}
+
+.clique {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../images/Mask Group 129.png");
+}
+@media screen and (max-width: 399px) {
+  .clique {
+    padding: 0 10px;
+  }
+}
+.clique::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #b9b9b9;
+}
+.clique::-webkit-scrollbar {
+  width: 6px;
+  background-color: #F5F5F5;
+}
+@media screen and (max-width: 600px) {
+  .clique::-webkit-scrollbar {
+    display: none;
+  }
+}
+.clique::-webkit-scrollbar-thumb {
+  background-color: #1f1e1e;
+}
+.clique::after {
+  top: 0;
+  left: -6px;
+  content: "";
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 39%;
+  background-image: linear-gradient(var(--black-color), transparent);
+}
+@media screen and (max-width: 600px) {
+  .clique::after {
+    left: 0;
+    height: 24vh !important;
+  }
+}
+.clique::before {
+  left: -6px;
+  bottom: 0;
+  content: "";
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 43%;
+  background-image: linear-gradient(transparent, var(--black-color));
+}
+@media screen and (max-width: 600px) {
+  .clique::before {
+    left: 0;
+    height: 25vh !important;
+  }
+}
+.clique-branch-login {
+  z-index: 1;
+  position: relative;
+  margin-top: 4.2rem;
+  transition: all 0.3s linear;
+}
+@media screen and (max-width: 600px) {
+  .clique-branch-login {
+    transform: scale(0.9);
+  }
+}
+@media screen and (max-width: 399px) {
+  .clique-branch-login {
+    transform: scale(0.8);
+    margin-top: 3.2rem;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .clique-branch-login {
+    transform: scale(1.1);
+  }
+}
+@media screen and (min-height: 1050px) {
+  .clique-branch-login {
+    margin-top: 6rem;
+  }
+}
+.clique-modal-login {
+  z-index: 1;
+  padding: 3.6rem 5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  margin-top: 8.1rem;
+}
+@media screen and (max-width: 600px) {
+  .clique-modal-login {
+    margin-top: 4.6rem;
+    padding: 1.2rem 3rem;
+  }
+}
+@media screen and (max-width: 399px) {
+  .clique-modal-login {
+    width: 100%;
+    margin-top: 3.5rem;
+    padding: 0 2rem;
+  }
+}
+.clique-modal-login__title {
+  color: white;
+  margin-top: 1rem;
+  font-size: 3.6rem;
+  font-weight: bold;
+  line-height: 6rem;
+}
+@media screen and (max-width: 600px) {
+  .clique-modal-login__title {
+    font-size: 3.1rem;
+  }
+}
+@media screen and (max-width: 399px) {
+  .clique-modal-login__title {
+    font-size: 2.9rem;
+  }
+}
+.clique-modal-login__form-login {
+  margin-top: 3rem;
+}
+@media screen and (max-width: 600px) {
+  .clique-modal-login__form-login {
+    display: flex;
+    padding: 0 20px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 399px) {
+  .clique-modal-login__form-login {
+    padding: 0;
+  }
+}
+@media screen and (min-height: 1050px) {
+  .clique-modal-login__form-login {
+    margin-top: 4.5rem;
+  }
+}
+.clique-modal-login__form-login input {
+  outline: none;
+  font-size: 1.6rem;
+  transition: all 0.3s linear;
+}
+@media screen and (max-width: 399px) {
+  .clique-modal-login__form-login input {
+    width: 100%;
+  }
+}
+.clique-modal-login__form-login input::placeholder {
+  font-size: 1.6rem;
+  color: transparent;
+}
+.clique-modal-login__form-login input:focus ~ label, .clique-modal-login__form-login input:not(:placeholder-shown) ~ label {
+  font-size: 1.2rem;
+  top: 0;
+}
+.clique-modal-login__form-login .form-login-password, .clique-modal-login__form-login .form-login-email {
+  overflow: hidden;
+  padding: 20px 20px 10px 20px;
+  position: relative;
+  margin-bottom: 1.4rem;
+  border-radius: 0.3rem;
+  color: var(--black-color);
+  transition: all 0.3s linear;
+  background-color: var(--white-color);
+}
+@media screen and (max-width: 399px) {
+  .clique-modal-login__form-login .form-login-password, .clique-modal-login__form-login .form-login-email {
+    width: 100%;
+  }
+}
+@media screen and (min-height: 1050px) {
+  .clique-modal-login__form-login .form-login-password, .clique-modal-login__form-login .form-login-email {
+    margin-bottom: 1.7rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .clique-modal-login__form-login .form-login-password__input, .clique-modal-login__form-login .form-login-email__input {
+    width: 240px;
+    height: 2.6rem;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .clique-modal-login__form-login .form-login-password__input, .clique-modal-login__form-login .form-login-email__input {
+    width: 44rem;
+  }
+}
+.clique-modal-login__form-login .form-login-email__input {
+  outline: none;
+}
+.clique-modal-login__form-login .form-login-email__label {
+  top: 15px;
+  left: 20px;
+  cursor: text;
+  line-height: 3rem;
+  font-size: 1.6rem;
+  position: absolute;
+  transition: all 0.2s linear;
+}
+.clique-modal-login__form-login .form-login-password__input {
+  outline: none;
+}
+.clique-modal-login__form-login .form-login-password__label {
+  top: 15px;
+  left: 20px;
+  cursor: text;
+  line-height: 3rem;
+  font-size: 1.6rem;
+  position: absolute;
+  transition: all 0.2s linear;
+}
+.clique-modal-login__fogot-password {
+  float: right;
+  font-size: 1.2rem;
+  margin-top: 1.3rem;
+  display: inline-block;
+  color: var(--white-color);
+}
+@media screen and (max-width: 600px) {
+  .clique-modal-login__fogot-password {
+    margin-right: 20px;
+  }
+}
+@media screen and (min-height: 1050px) {
+  .clique-modal-login__fogot-password {
+    font-size: 1.4rem;
+    margin-top: 1.6rem;
+  }
+}
+.clique-modal-login__fogot-password:hover {
+  text-decoration: none;
+}
+.clique-modal-login__seperate {
+  clear: both;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 3.7rem;
+  width: 100%;
+  height: 2rem;
+}
+@media screen and (min-height: 1050px) {
+  .clique-modal-login__seperate {
+    margin-top: 4.5rem;
+  }
+}
+.clique-modal-login__seperate::after {
+  left: 0;
+  top: 50%;
+  width: 35%;
+  content: "";
+  display: block;
+  position: absolute;
+  transform: translateY(-50%);
+  border-top: 1px solid #707070;
+}
+@media screen and (max-width: 600px) {
+  .clique-modal-login__seperate::after {
+    left: 20px;
+    width: calc(35% - 21px);
+  }
+}
+.clique-modal-login__seperate::before {
+  top: 50%;
+  right: 0;
+  width: 35%;
+  content: "";
+  display: block;
+  position: absolute;
+  transform: translateY(-50%);
+  border-top: 1px solid #707070;
+}
+@media screen and (max-width: 600px) {
+  .clique-modal-login__seperate::before {
+    right: 20px;
+    width: calc(35% - 20px);
+  }
+}
+.clique-modal-login__seperate label {
+  color: var(--white-color);
+  position: relative;
+  z-index: 1;
+  color: #A8A8A8;
+  font-size: 1.4rem;
+  display: block;
+  width: 200px;
+  text-align: center;
+}
+.clique-modal-login__social {
+  width: 100%;
+  margin-top: 1.6rem;
+}
+@media screen and (max-width: 600px) {
+  .clique-modal-login__social {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.clique-modal-login__social-item {
+  width: 100%;
+  display: flex;
+  border-radius: 3px;
+  margin-bottom: 1.4rem;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 1.6rem;
+  transition: all 0.3s;
+}
+@media screen and (max-width: 600px) {
+  .clique-modal-login__social-item {
+    width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 399px) {
+  .clique-modal-login__social-item {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .clique-modal-login__social-item {
+    padding: 1.2rem 2.3rem;
+  }
+}
+@media screen and (min-height: 1050px) {
+  .clique-modal-login__social-item {
+    margin-bottom: 1.7rem;
+  }
+}
+.clique-modal-login__social-item span {
+  font-size: 1.6rem;
+  margin: auto;
+  line-height: 2.5rem;
+  color: var(--white-color);
+}
+.clique-modal-login__social .social-item--twitter {
+  background-color: #3CA6CC;
+}
+.clique-modal-login__social .social-item--facebook {
+  background-color: #264F88;
+}
+.clique-modal-login__new-register {
+  margin-top: 3.2rem;
+  font-size: 1.6rem;
+  text-align: center;
+  color: var(--white-color);
+}
+@media screen and (max-width: 600px) {
+  .clique-modal-login__new-register {
+    margin-top: 2.2rem;
+  }
+}
+@media screen and (min-height: 1050px) {
+  .clique-modal-login__new-register {
+    margin-top: 5rem;
+  }
+}
+.clique-modal-login__new-register a {
+  color: red;
+}
+.clique-modal-login__new-register a:hover {
+  text-decoration: none;
+}
+.clique-vender-login {
+  z-index: 1;
+  color: #A8A8A8;
+  position: relative;
+  font-size: 1.6rem;
+  margin-top: 3rem;
+  margin-bottom: 4.8rem;
+}
+@media screen and (max-width: 600px) {
+  .clique-vender-login {
+    margin-bottom: 3.8rem;
+  }
+}
+@media screen and (min-height: 1050px) {
+  .clique-vender-login {
+    margin-top: 5rem;
+  }
+}
+.clique-vender-login a {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+.form-login-submit {
+  font-size: 1.6rem;
+  color: white;
+  line-height: 2.6rem;
+  text-align: center;
+  border-radius: 0.3rem;
+  padding: 1rem 2rem;
+  transition: all 0.3s;
+  background-color: #2F9A4C;
+  width: 100%;
+  height: 4.5rem;
+}
+@media screen and (max-width: 600px) {
+  .form-login-submit {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .form-login-submit {
+    height: 5rem;
+    width: 100%;
+  }
+}
+
+.form-login-password__input, .form-login-email__input {
+  width: 30.2rem;
+  height: 3rem;
+}
+
+/*# sourceMappingURL=login.css.map */
