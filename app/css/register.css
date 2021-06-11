@@ -139,6 +139,7 @@
 }
 .clique-modal .register-group-fields__row {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0 -0.75rem;
   justify-content: center;
@@ -158,6 +159,11 @@
     flex-direction: column;
   }
 }
+@media screen and (max-width: 780px) {
+  .clique-modal .register-group-fields__row > div {
+    width: 100%;
+  }
+}
 .clique-modal .register-group-fields__row .register-field {
   padding: 10px 12px;
   display: flex;
@@ -168,7 +174,6 @@
 }
 @media screen and (max-width: 780px) {
   .clique-modal .register-group-fields__row .register-field {
-    width: 100%;
     padding: 10px 20px !important;
     margin: 0.7rem 0.75rem;
   }

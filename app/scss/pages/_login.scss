@@ -48,7 +48,7 @@
         content: "";
         display: block;
         position: fixed;
-        @include size(100%, 39%);
+        @include size(100%, 30%);
         background-image: linear-gradient(var(--black-color), transparent);
 
         @include maxWidth(600px) {
@@ -63,7 +63,7 @@
         content: "";
         display: block;
         position: fixed;
-        @include size(100%, 43%);
+        @include size(100%, 33%);
         background-image: linear-gradient(transparent, var(--black-color));
     
         @include maxWidth(600px) {
@@ -120,6 +120,23 @@
             font-size: 3.6rem;
             font-weight: bold;
             line-height: 6rem;
+            margin-bottom: 3rem;
+
+            @include maxWidth(600px) {
+                display: flex;
+                padding: 0 20px;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 2rem;
+            }
+
+            @include maxWidth(399px) {
+                padding: 0;
+            }
+
+            @include minHeight(1050px) {
+                margin-bottom: 4.5rem;
+            }
 
             @include maxWidth(600px) {
                 font-size: 3.1rem;
@@ -130,23 +147,29 @@
             }
         }
         
+        .message-cant-find-account {
+            display: none;
+            color: white;
+            font-size: 1.4rem;
+            border-radius: 3px;
+            text-align: center;
+            line-height: 2.2rem;
+            padding: 1.2rem 0.8rem;
+            background-color: #F46F1C;
+            transform: translateY(-1.2rem);
+        }
+
         &__form-login {
-            margin-top: 3rem;
 
             @include maxWidth(600px) {
                 display: flex;
                 padding: 0 20px;
                 flex-direction: column;
                 align-items: center;
-                margin-top: 2rem;
             }
 
             @include maxWidth(399px) {
                 padding: 0;
-            }
-
-            @include minHeight(1050px) {
-                margin-top: 4.5rem;
             }
 
             input {
@@ -172,12 +195,12 @@
 
             %form-login-email-password {
                 overflow: hidden;
-                padding: 20px 20px 10px 20px;
                 position: relative;
                 margin-bottom: 1.4rem;
                 border-radius: 0.3rem;
+                box-sizing: border-box;
                 color: var(--black-color);
-                transition: all 0.3s linear;
+                padding: 20px 20px 10px 20px;
                 background-color: var(--white-color);
 
                 @include maxWidth(399px) {
@@ -441,4 +464,22 @@
 
 .form-login-password__input, .form-login-email__input {
     @include size(30.2rem, 3rem);
+}
+
+.form-invalid-message {
+    display: none;
+}
+
+.invalid {
+    border: 2px solid #FD3332;
+
+    + .form-invalid-message {
+        display: block;
+        font-weight: 500;
+        color: #FD3332;
+        font-size: 1.6rem;
+        text-indent: 0.8rem;
+        margin-bottom: 1.8rem;
+        display: inline-block;
+    }
 }

@@ -133,6 +133,7 @@
 
             &__row {
                 display: flex;
+                flex-wrap: wrap;
                 align-items: center;
                 margin: 0 -0.75rem;
                 justify-content: center;
@@ -149,6 +150,12 @@
                     flex-direction: column;
                 }
 
+                > div {
+                    @include maxWidth(780px) {
+                        width: 100%;
+                    }
+                }
+
                 .register-field {
                     padding: 10px 12px;
                     display: flex;
@@ -158,7 +165,6 @@
                     background-color: var(--white-color);
 
                     @include maxWidth(780px) {
-                        width: 100%;
                         padding: 10px 20px !important;
                         margin: 0.7rem 0.75rem;
                     }
