@@ -15,7 +15,7 @@ const dataPosts = [
         totalHeart: 100,
         totalComment: 21,
         description: 'Mbappe joins exclusive 10-man club with hat-trick at Barca',
-        favourite: false,
+        favourite: true,
         statusCheck: 'inline-block'
     },
     {
@@ -57,7 +57,7 @@ const dataPosts = [
         totalHeart: 100,
         totalComment: 21,
         description: "Former Raven Chris Wormley realizing 'dream' with Steelers",
-        favourite: false,
+        favourite: true,
         statusCheck: 'none'
     },
     {
@@ -85,7 +85,7 @@ const dataPosts = [
         totalHeart: 100,
         totalComment: 21,
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        favourite: false,
+        favourite: true,
         statusCheck: 'none'
     },
     {
@@ -169,7 +169,7 @@ const dataPosts = [
         totalHeart: 100,
         totalComment: 21,
         description: "Josh Harris and David Blitzer are minority owners",
-        favourite: false,
+        favourite: true,
         statusCheck: 'none'
     },
     {
@@ -183,7 +183,7 @@ const dataPosts = [
         totalHeart: 462,
         totalComment: 238,
         description: "Football: Ronaldo marks 600th league game with landmark goal as Juve beat Spezia.",
-        favourite: false,
+        favourite: true,
         statusCheck: 'none'
     },
     {
@@ -295,7 +295,7 @@ const dataPosts = [
         totalHeart: 100,
         totalComment: 21,
         description: 'Mbappe joins exclusive 10-man club with hat-trick at Barca',
-        favourite: false,
+        favourite: true,
         statusCheck: 'inline-block'
     },
     {
@@ -393,7 +393,7 @@ const dataPosts = [
         totalHeart: 100,
         totalComment: 21,
         description: "Eric Garcia taken off on a stretcher after sickening collision in Manchester City’s win over Arsenal",
-        favourite: false,
+        favourite: true,
         statusCheck: 'none'
     },
     {
@@ -477,7 +477,7 @@ const dataPosts = [
         totalHeart: 214,
         totalComment: 31,
         description: "Disney + Will July Debut ‘Black Is King’, Beyoncé’s New Visual Album – Deadline",
-        favourite: false,
+        favourite: true,
         statusCheck: 'none'
     },
     {
@@ -533,7 +533,7 @@ const dataPosts = [
         totalHeart: 156,
         totalComment: 76,
         description: "Haaland thanks Mbappe for providing Champions League 'motivation'",
-        favourite: false,
+        favourite: true,
         statusCheck: 'none'
     },
     {
@@ -547,7 +547,7 @@ const dataPosts = [
         totalHeart: 100,
         totalComment: 21,
         description: "Elton John tops rock earnings list",
-        favourite: false,
+        favourite: true,
         statusCheck: 'none'
     },
     {
@@ -561,7 +561,7 @@ const dataPosts = [
         totalHeart: 100,
         totalComment: 21,
         description: "Josh Harris and David Blitzer are minority owners",
-        favourite: false,
+        favourite: true,
         statusCheck: 'none'
     },
     {
@@ -631,7 +631,7 @@ const dataPosts = [
         totalHeart: 100,
         totalComment: 21,
         description: "Controversy mars EPL",
-        favourite: false,
+        favourite: true,
         statusCheck: 'none'
     },
     {
@@ -659,7 +659,7 @@ const dataPosts = [
         totalHeart: 100,
         totalComment: 21,
         description: "Injuries, red cards and a $640k-a-week problem: How Arsenal got even worse after lockdown",
-        favourite: false,
+        favourite: true,
         statusCheck: 'none'
     },
     {
@@ -701,7 +701,7 @@ const dataPosts = [
         totalHeart: 100,
         totalComment: 21,
         description: "Steelers to Close Facility in Observance of Juneteenth",
-        favourite: false,
+        favourite: true,
         statusCheck: 'none'
     },
     {
@@ -715,7 +715,7 @@ const dataPosts = [
         totalHeart: 462,
         totalComment: 238,
         description: "Football: Ronaldo marks 600th league game with landmark goal as Juve beat Spezia.",
-        favourite: false,
+        favourite: true,
         statusCheck: 'none'
     },
     {
@@ -743,7 +743,7 @@ const dataPosts = [
         totalHeart: 462,
         totalComment: 238,
         description: "Football: Ronaldo marks 600th league game with landmark goal as Juve beat Spezia.",
-        favourite: false,
+        favourite: true,
         statusCheck: 'none'
     },
     {
@@ -799,7 +799,7 @@ const dataPosts = [
         totalHeart: 100,
         totalComment: 21,
         description: "Steelers to Close Facility in Observance of Juneteenth",
-        favourite: false,
+        favourite: true,
         statusCheck: 'none'
     },
     {
@@ -813,7 +813,7 @@ const dataPosts = [
         totalHeart: 156,
         totalComment: 76,
         description: "Haaland thanks Mbappe for providing Champions League 'motivation'",
-        favourite: false,
+        favourite: true,
         statusCheck: 'none'
     },
     {
@@ -883,7 +883,7 @@ const dataPosts = [
         totalHeart: 462,
         totalComment: 238,
         description: "Football: Ronaldo marks 600th league game with landmark goal as Juve beat Spezia.",
-        favourite: false,
+        favourite: true,
         statusCheck: 'none'
     },
     {
@@ -967,7 +967,7 @@ const dataPosts = [
         totalHeart: 100,
         totalComment: 21,
         description: "10 incredible facts we learnt about Queen from the music special",
-        favourite: false,
+        favourite: true,
         statusCheck: 'none'
     },
     {
@@ -1009,7 +1009,7 @@ const dataPosts = [
         totalHeart: 100,
         totalComment: 21,
         description: "Josh Harris and David Blitzer are minority owners",
-        favourite: false,
+        favourite: true,
         statusCheck: 'none'
     },
     {
@@ -1023,7 +1023,7 @@ const dataPosts = [
         totalHeart: 462,
         totalComment: 238,
         description: "Football: Ronaldo marks 600th league game with landmark goal as Juve beat Spezia.",
-        favourite: false,
+        favourite: true,
         statusCheck: 'none'
     },
     {
@@ -1051,7 +1051,7 @@ const dataPosts = [
         totalHeart: 112,
         totalComment: 18,
         description: 'Tân binh MU 1160 tỷ đồng: "Đứa con thần gió" Amad Diallo tài năng ra sao?',
-        favourite: false,
+        favourite: true,
         statusCheck: 'none'
     },
     {
@@ -1079,7 +1079,7 @@ const dataPosts = [
         totalHeart: 100,
         totalComment: 21,
         description: "Steelers to Close Facility in Observance of Juneteenth",
-        favourite: false,
+        favourite: true,
         statusCheck: 'none'
     },
     {
@@ -1149,7 +1149,7 @@ const dataPosts = [
         totalHeart: 100,
         totalComment: 21,
         description: "Origin series and women's game in November",
-        favourite: false,
+        favourite: true,
         statusCheck: 'none'
     },
     {
@@ -1191,7 +1191,7 @@ const dataPosts = [
         totalHeart: 111,
         totalComment: 24,
         description: "Controversy mars EPL",
-        favourite: false,
+        favourite: true,
         statusCheck: 'none'
     },
     {
@@ -1219,7 +1219,7 @@ const dataPosts = [
         totalHeart: 100,
         totalComment: 21,
         description: "Injuries, red cards and a $640k-a-week problem: How Arsenal got even worse after lockdown",
-        favourite: false,
+        favourite: true,
         statusCheck: 'none'
     },
     {
@@ -1289,7 +1289,7 @@ const dataPosts = [
         totalHeart: 100,
         totalComment: 21,
         description: "Josh Harris and David Blitzer are minority owners",
-        favourite: false,
+        favourite: true,
         statusCheck: 'none'
     },
     {
@@ -1359,7 +1359,7 @@ const dataPosts = [
         totalHeart: 100,
         totalComment: 21,
         description: "Steelers to Close Facility in Observance of Juneteenth",
-        favourite: false,
+        favourite: true,
         statusCheck: 'none'
     },
     {
@@ -1373,7 +1373,7 @@ const dataPosts = [
         totalHeart: 156,
         totalComment: 76,
         description: "Haaland thanks Mbappe for providing Champions League 'motivation'",
-        favourite: false,
+        favourite: true,
         statusCheck: 'none'
     },
     {
@@ -1385,7 +1385,7 @@ const dataPosts = [
         imageUrl: '../build/assets/images/Image\ 70.png',
         eventTime: '4 Months ago',
         totalHeart: 99,
-        totalComment: 09,
+        totalComment: 19,
         description: "Elton John tops rock earnings list",
         favourite: false,
         statusCheck: 'none'
