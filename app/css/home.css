@@ -218,6 +218,7 @@
   display: flex;
   cursor: pointer;
   align-items: center;
+  position: relative;
 }
 .home-header__functional .header-functional__user-name {
   display: none;
@@ -244,12 +245,52 @@
     display: block;
   }
 }
+.home-header__functional .header-functional__user:hover .functional-user-container {
+  visibility: visible;
+}
 .home-header__functional .header-functional__user > img {
   border-radius: 50%;
   transition: all 0.2s linear;
 }
 .home-header__functional .header-functional__user:hover > img {
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+}
+.home-header__functional .header-functional__user .functional-user-container {
+  visibility: hidden;
+  text-align: center;
+  background-color: white;
+  width: 12rem;
+  position: absolute;
+  padding: 10px 10px;
+  top: calc(100% + 6px);
+  border-radius: 4px;
+  box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.1);
+  right: 0;
+  transition: all 0.2s linear;
+}
+@media screen and (max-width: 839px) {
+  .home-header__functional .header-functional__user .functional-user-container {
+    display: none;
+  }
+}
+.home-header__functional .header-functional__user .functional-user-container .header-functional__user-name.user-name-pc {
+  display: block;
+  transition: unset;
+  font-size: 1.4rem;
+  margin: 0 0 6px 0;
+  padding: 2px 0px 6px 0px;
+  border-bottom: 1px solid #ccc;
+}
+.home-header__functional .header-functional__user .functional-user-container .functional-user-logout {
+  font-weight: 600;
+  transition: unset;
+  font-size: 1.3rem;
+  padding: 6px 0 2px 0;
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.7);
+}
+.home-header__functional .header-functional__user .functional-user-container .functional-user-logout:hover {
+  color: #ca0a0a;
 }
 .home-header__functional .header-functional__user > svg {
   margin-left: 1.3rem;
@@ -366,6 +407,9 @@
     margin-left: 0;
   }
 }
+.home-content__category .category-list .category-item.active {
+  color: #eb2121;
+}
 .home-content__category .category-list .category-item {
   height: 100%;
   margin: 0 3.5rem;
@@ -375,9 +419,11 @@
   text-align: center;
   line-height: 2.5rem;
   transition: all 0.1s linear;
+  transition: color 0.2s linear;
 }
 .home-content__category .category-list .category-item:hover {
   cursor: pointer;
+  color: #eb2121;
 }
 @media screen and (max-width: 1150px) {
   .home-content__category .category-list .category-item {
@@ -576,6 +622,9 @@
 }
 .home-content__post-container .home-content-post .home-post-footer__heart svg {
   margin-right: 0.8rem;
+}
+.home-content__post-container .home-content-post .home-post-footer__heart svg path {
+  transition: all 0.1s linear;
 }
 
 /*# sourceMappingURL=home.css.map */

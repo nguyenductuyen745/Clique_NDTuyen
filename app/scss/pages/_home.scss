@@ -228,6 +228,7 @@
                 display: flex;
                 cursor: pointer;
                 align-items: center;
+                position: relative;
 
                 &-name {
                     display: none;
@@ -254,6 +255,10 @@
                     };
                 }
 
+                &:hover .functional-user-container {
+                    visibility: visible;
+                }
+
                 > img{
                     border-radius: 50%;
                     transition: all 0.2s linear;
@@ -261,6 +266,46 @@
 
                 &:hover > img {
                     box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+                }
+
+                .functional-user-container {
+                    visibility: hidden;
+                    text-align: center;
+                    background-color: white;
+                    width: 12rem;
+                    position: absolute;
+                    padding: 10px 10px;
+                    top: calc(100% + 6px);
+                    border-radius: 4px;
+                    box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.1);
+                    right: 0;
+                    transition: all 0.2s linear;
+
+                    @include maxWidth(839px) {
+                        display: none;
+                    }
+
+                    .header-functional__user-name.user-name-pc {
+                        display: block;
+                        transition: unset;
+                        font-size: 1.4rem;
+                        margin: 0 0 6px 0;
+                        padding: 2px 0px 6px 0px;
+                        border-bottom: 1px solid #ccc;
+                    }
+
+                    .functional-user-logout {
+                        font-weight: 600;
+                        transition: unset;
+                        font-size: 1.3rem;
+                        padding: 6px 0 2px 0;
+                        display: inline-block;
+                        color: rgba(0, 0, 0, 0.7);
+
+                        &:hover {
+                            color: rgb(202, 10, 10);
+                        }
+                    }
                 }
 
                 > svg {

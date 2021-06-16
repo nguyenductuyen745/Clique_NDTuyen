@@ -1,4 +1,8 @@
 
+// When user revisit the Login page, if they are already logged in, it should redirect them to Home page
+localStorage.getItem('user-infor') && (window.location.href = './Home.html');
+
+//
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
@@ -66,9 +70,45 @@ const rules = {
         checkRules();
         //  Thêm sự kiện onInput cho các trường để trường input đc check ngay cả khi user đang gõ chữ
         addInputEvent();
-        //  Phần này sẽ quyết định xem form có đủ đk để submit ko (nó chỉ đủ đk submit khi ko tồn tại 1 class invalid nào trong form)
+
+        // Kiểm tra xem có trường nào hiện tại đang invalid ko
         let hasSubmit = Boolean(formElement.querySelector('.invalid'));
-        !hasSubmit && formElement.submit();
+
+        if(!hasSubmit) {
+            // Nếu ko có trường nào invalid thì t bắt đầu call API để check xem sự tồn tại của Account
+
+            let usernameValue = fieldElements[0].value;
+            let passwordValue = fieldElements[1].value;
+
+            fetch("https://test.cliquefan.com/api/portal/app/login", {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({'username': usernameValue, 'password': passwordValue})
+            })
+            .then((response) => {
+                return response.json();
+            })
+            .then((userInfor) => {
+                if(userInfor.hasOwnProperty('error')) {
+                    let notifyNotFind = $('.message-cant-find-account');
+
+                    // Khi server trả về lỗi thì cần show notify ra cho user biết
+                    notifyNotFind.innerText = userInfor.error.message;
+                    notifyNotFind.style.display = 'block';
+                } else {
+                    $('.message-cant-find-account').style.display = 'none';
+                    // lưu dữ liệu user đc server trả về nên localStorage
+                    localStorage.setItem("user-infor", JSON.stringify(userInfor.responseData));
+                    // sau khi lưu data nên localStr thì t sẽ điều hướng user sang home page
+                    window.location.href = './Home.html';
+                }
+            })
+            .catch((errorMessage) => {
+                // show error khi trong quá trình call API gặp vấn đề dấn đến việc call faild
+                alert(errorMessage);
+            })
+        }
     });
-    
 })();
