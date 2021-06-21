@@ -654,7 +654,7 @@
                             margin-right: 0.8rem;
                             
                             path {
-                                transition: all 0.1s linear;
+                                transition: unset;
                             }
                         }
                     }
@@ -678,7 +678,7 @@
     animation-fill-mode: forwards;
     border: 1.5px solid #ffaf01;
     transform: translate(-50%, -50%);
-    animation: showAndHide 3s linear;
+    animation: showAndHide 2.4s linear;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
 
     @include maxWidth(600px) {

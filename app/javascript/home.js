@@ -1278,16 +1278,11 @@ function render(numberSection, itemToFilter = false) {
 }
 
 function heartStatusToggle(svgElement) {
+    let requestPutError = false;
     let pathElement = svgElement.querySelector('path');
     let newStatusPath = pathElement.getAttribute('fill') == 'red' ? '#c0c9d5' : 'red';
     let totalHeartElement = svgElement.parentElement.querySelector('.post-heart-number');
     let newTotalHeart = Number(totalHeartElement.innerText);
-    
-    // Thay đổi color cho icon heart
-    pathElement.setAttribute('fill', newStatusPath);
-    // Thay đổi total heart
-    newStatusPath == 'red' ? newTotalHeart++ : newTotalHeart--;
-    totalHeartElement.innerText = newTotalHeart;
 
     // Lấy ra id của cái post mà user vừa click vào icon heart của post đó
     let postId = getParentElement(svgElement, '.home-content-post').dataset['id'];
@@ -1310,14 +1305,25 @@ function heartStatusToggle(svgElement) {
 
             // Nếu request error thì show notify nên cho user biết.
             if(statusResponse['error']) {
+                requestPutError = true;
                 notifyElement.style.display = 'flex';
-                
+
                 setTimeout(() => {
                     notifyElement.style.display = 'none';
-                }, 3000);
+                }, 2400);
             }
         })
     }
+
+    setTimeout(() => {
+        if(!requestPutError) {
+            // Thay đổi color cho icon heart
+            pathElement.setAttribute('fill', newStatusPath);
+            // Thay đổi total heart
+            newStatusPath == 'red' ? newTotalHeart++ : newTotalHeart--;
+            totalHeartElement.innerText = newTotalHeart;
+        }
+    }, 100);
 }
 
 function appendPosts() {

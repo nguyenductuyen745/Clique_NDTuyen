@@ -624,7 +624,7 @@
   margin-right: 0.8rem;
 }
 .home-content__post-container .home-content-post .home-post-footer__heart svg path {
-  transition: all 0.1s linear;
+  transition: unset;
 }
 
 .notify-not-updated {
