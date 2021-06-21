@@ -1390,7 +1390,7 @@ function timeSince(date) {
       return Math.floor(interval) + " minutes";
     }
     return Math.floor(seconds) + " seconds";
-}
+} 
 
 function getParentElement(childElement, parentElement) {
     do {
